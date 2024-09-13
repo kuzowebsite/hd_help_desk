@@ -1,0 +1,52 @@
+body {background-image: url("https://i.ibb.co/1z4zyDr/wp5225281.webp");
+
+  background-repeat:repeat;
+  
+  background-size:100%;
+  
+  }
+  
+  h2 {
+  
+    font-family:"Courier New", Courier, monospace;
+  
+    text-align: Center;
+  
+    color: white;  
+  
+  }
+  
+  .gif {
+  
+    width: 310px;
+  
+    height: 280px;
+  
+    padding:30px;
+  
+    border: 5px solid pink;
+  
+    border-style: double;
+  
+    margin: 0 auto; 
+  
+  }
+  
+  h3{
+  
+    font-family: 'Monospace', Courier New;
+  
+   }
+  
+  p{
+  
+    font-family: Times New Roman;
+  
+    color: white;
+  
+  }
+  .shuvuu a {
+    width: 800px; 
+    height: 800px;
+
+  }
