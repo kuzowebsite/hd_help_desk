@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="apple-dock">
+        <div class="dock-item" data-window="imac" onclick="openModal()">
+          <img src="https://img.icons8.com/?size=48&id=122959&format=png" alt="">
+        </div>
+        <div class="dock-item" data-window="safari" onclick="openModal()">
+          <img src="https://img.icons8.com/?size=48&id=63801&format=png" alt="">
+        </div>
+        <div class="dock-item" data-window="imessage" onclick="openModal()">
+          <img src="https://img.icons8.com/?size=48&id=J6pBf3G6DZGM&format=png" alt="">
+        </div>
+        <div class="dock-item" data-window="email" onclick="openModal()">
+          <img src="https://img.icons8.com/?size=48&id=7rhqrO588QcU&format=png" alt="">
+        </div>
+        <div class="dock-item" data-window="vscode" onclick="openModal()">
+          <img src="https://img.icons8.com/?size=48&id=ezj3zaVtImPg&format=png" alt="">
+        </div>
+        <div class="dock-item" data-window="photoshop" onclick="openModal()">
+          <img src="https://img.icons8.com/?size=48&id=13677&format=png" alt="">
+        </div>
+        <div class="dock-item" data-window="blender" onclick="openModal()">
+          <img src="https://img.icons8.com/?size=48&id=65231&format=png" alt="">
+        </div>
+        <div class="dock-item" data-window="portfolio" onclick="openModal()">
+          <img src="https://bhardwaj.netlify.app/icons/logo.svg" alt="">
+        </div>
+        <div class="dock-item" data-window="portfolio-old" onclick="openModal()">
+          <img src="https://bhardwaj.netlify.app/icons/logo.svg" alt="">
+        </div>
+        <div class="dock-item" data-window="portfolio-old-2" onclick="openModal()">
+          <img src="https://bhardwaj-old.netlify.app/logonav.svg" alt="">
+        </div>
+        
+      </div>
+      
+      <section id="blender" class="window" draggable="true" ondragend="windowPosition()" onclick="makeTop()">
+        <div class="content">
+          <img width="100%" src="https://i.ibb.co/8YYvgr6/image.png" alt="">
+        </div>
+        
+      </section>
+      
+      <section id="photoshop" draggable="true" class="window" ondragend="windowPosition()" onclick="makeTop()">
+        <div  class="content" >
+          <iframe class="fullSpace" frameborder=0 src="https://pixlr.com/express/"></iframe>
+          </div>
+      </section>
+      <section id="vscode" draggable="true" class="window" ondragend="windowPosition()" onclick="makeTop()">
+         <div class="content">
+       <iframe class="fullSpace" frameborder=0 src="https://github1s.com/abhiib02/PortfolioSvelte/blob/main/src/app.html"></iframe>
+           </div>
+      </section>
+      <section id="imac" draggable="true" class="window" ondragend="windowPosition()" onclick="makeTop()">
+         <div class="content">
+        <H1>I MAC</H1><br>Засвартай!
+            </div>
+      </section>
+      <section id="safari" draggable="true" class="window" ondragend="windowPosition()" onclick="makeTop()">
+         <div class="content">
+            <div class="content">
+                <iframe class="fullSpace" frameborder=0 src="https://www.google.co.uk/"></iframe>
+                </div>
+            </div>
+      </section>
+      <section id="imessage" draggable="true" class="window" ondragend="windowPosition()" ondrop="windowPosition()" onclick="makeTop()">
+         <div class="content"><br>Засвартай!
+        <H1>iMessage</H1>
+            </div>
+      </section>
+      <section id="email" draggable="true" class="window" ondragend="windowPosition()" onclick="makeTop()">
+         <div class="content">
+            <iframe class="fullSpace" frameborder=0 src="https://mail.google.com"></iframe>
+            </div>
+      </section>
+      <section id="portfolio" draggable="true" class="window" ondragend="windowPosition()" onclick="makeTop()">
+         <div class="content">
+       <iframe class="fullSpace" frameborder=0 src="https://www.ider.edu.mn/"></iframe>
+            </div>
+      </section>
+      <section id="portfolio-old" draggable="true" class="window" ondragend="windowPosition()" onclick="makeTop()">
+         <div class="content">
+       <iframe class="fullSpace" frameborder=0 src="https://online.ider.edu.mn/"></iframe>
+            </div>
+      </section>
+      <section id="portfolio-old-2" draggable="true" class="window" ondragend="windowPosition()" onclick="makeTop()">
+         <div class="content">
+       <iframe class="fullSpace" frameborder=0 src="https://www.nccedu.com/study-centres/ider-university/"></iframe>
+            </div>
+      </section>
+            <script src="app.js"></script>    
+</body>
+</html>
