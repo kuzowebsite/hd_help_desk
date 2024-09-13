@@ -13,7 +13,7 @@ yesBtn.addEventListener("click", () => {
       "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
     loveConfirmed = true;
   } else {
-    window.location.href = "https://example.com"; // Шилжих вэб хуудасны хаягийг энд оруулсан
+    window.location.href = "/lvmusic.html"; // Шилжих вэб хуудасны хаягийг энд оруулсан
   }
 });
 
