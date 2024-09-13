@@ -4,10 +4,17 @@ const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
+let loveConfirmed = false;
+
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "Ааааа, Би ч бас чамд хайртай";
-  gif.src =
-    "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
+  if (!loveConfirmed) {
+    question.innerHTML = "Ааааа, Би ч бас чамд хайртай";
+    gif.src =
+      "https://raw.githubusercontent.com/DzarelDeveloper/Img/main/gif.webp";
+    loveConfirmed = true;
+  } else {
+    window.location.href = "https://example.com"; // Шилжих вэб хуудасны хаягийг энд оруулсан
+  }
 });
 
 noBtn.addEventListener("mouseover", () => {
