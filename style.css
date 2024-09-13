@@ -23,6 +23,18 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.content{
+  margin-top: 10%;
+  max-width: 600px;
+}
+.content h2{
+  font-size: 30px
+}
+.content p{
+  margin-top: 10px;
+  line-height: 25px;
+}
+
 .wrapper {
   width: 1152px;
   margin: 0 auto;
@@ -115,7 +127,7 @@ section a.btn {
 }
 
 
-/* Hero Section */
+/* Home hesgiin button, garchig size */
 
 .hero-container {
   height: 100vh;
@@ -138,8 +150,21 @@ section a.btn {
   margin: 8px 0 28px 0;
 }
 
-.hero-container .left .gt {
-  color: var(--red-color);
+
+.hero-container .left .gt::before {
+  content: "HELP DESK";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  color: #475bed;
+  border-right: 0.1px solid #475bed;
+  transition: 0.8s ease-in-out;
+}
+
+.hero-container .left .gt:hover::before {
+width: 40%;
+filter: drop-shadow(0 0 25px #475bed);
 }
 
 .hero-container .left .btn {
@@ -150,7 +175,7 @@ section a.btn {
   padding-right: 30px;
 }
 
-/* Hero BG and Polygons */
+/* Home hesgiin background Animation */
 
 .hero-bg {
   position: absolute;
@@ -280,37 +305,7 @@ section a.btn {
   }
 }
 
-/* Brands Section */
-
-.brands-section {
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
-  border-radius: 24px;
-  background: var(--light-color);
-  padding: 32px 50px;
-  margin-top: 100px;
-}
-
-.brands-section .brands-container img {
-  height: 32px;
-}
-
-.brands-section .brands-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brands-section .brands-line-1 {
-  display: flex;
-  justify-content: space-around;
-  flex: 2;
-}
-
-.brands-section .brands-line-2 {
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-}
+/* Компьютероо засуулах garchig size, text */
 
 .brands-section h2,
 section h2 {
@@ -333,32 +328,8 @@ section h2::after {
   transform: translateX(-43px);
 }
 
-/* About Us */
 
-.about-section .section-content {
-  display: flex;
-  align-items: center;
-}
-
-.about-section .section-content img {
-  margin-left: 100px;
-}
-
-/* Projects Section */
-
-.projects-gallery {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px 18px;
-  margin-bottom: 42px;
-}
-
-.projects-gallery img {
-  width: 100%;
-  object-fit: cover;
-}
-
-/* Testimonials Section */
+/* Windows үйлдлийн системүүд size, text */
 
 .slide-container {
   display: flex;
@@ -396,7 +367,7 @@ section h2::after {
   right: 0;
 }
 
-/* Contact Section */
+/*  mail ilgeeh hesgiin size ongo */
 
 input[type="text"],
 textarea {
@@ -490,7 +461,7 @@ footer a:hover {
   display: none;
 }
 
-/* Media Queries */
+/* Size desplay background totrool bn iluu guihgui */
 
 @media (max-width: 650px) {
   .wrapper {
@@ -550,46 +521,9 @@ footer a:hover {
     font-size: 14px;
   }
 
-  /* Brands Section */
+  
 
-  .brands-section {
-    border-radius: 0;
-    padding: 32px 0;
-  }
-
-  .brands-section h2,
-  section h2 {
-    font-size: 24px;
-  }
-
-  .brands-section h2::after,
-  section h2::after {
-    top: 100%;
-    width: 40px;
-    transform: translateX(-40px);
-  }
-
-  .brands-section .brands-container {
-    flex-direction: column;
-  }
-
-  .brands-section .brands-container img {
-    height: 24px;
-  }
-
-  .brands-section .brands-line-1 {
-    width: 100%;
-  }
-
-  .brands-section .brands-line-1 {
-    padding-bottom: 25px;
-  }
-
-  .brands-section .brands-line-2 {
-    width: 60%;
-  }
-
-  /* About Us */
+  /* burtgel */
 
   section {
     padding: 100px 30px 0 30px;
@@ -603,22 +537,8 @@ footer a:hover {
     margin-left: 0;
     margin-top: 30px;
   }
-
-  /* Projects Section */
-
-  .projects-gallery {
-    grid-template-columns: 1fr;
-  }
-
-  .projects-gallery img {
-    height: 240px;
-  }
-
-  .projects-gallery img.hide {
-    display: none;
-  }
-
-  /* Testimonials Section */
+  
+  /* windows uildliin system */
 
   .testimonial .slide-container {
     display: flex;
@@ -638,7 +558,7 @@ footer a:hover {
     padding: 0;
   }
 
-  /* Contact Section */
+  /* phone menu heser */
 
   .contact-section .group {
     flex-direction: column;
@@ -734,3 +654,37 @@ footer a:hover {
   color: black;
   background: rgba(0, 0, 0, 0.1);
 }
+
+/*Help desk headr heseg*/
+
+h1 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h1 span {
+  color: var(--red-color);
+  position: relative;
+}
+
+h1 span::before {
+  content: "";
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: var(--red-color);
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+
+h1 span.stop-blinking::before {
+  animation: none;
+}
+
+@keyframes blink {
+  50% { opacity: 0 }
+}
+
