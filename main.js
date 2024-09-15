@@ -37,6 +37,7 @@ window.addEventListener('click', function(event) {
 });
 
 
+
 // Mobile Navigation
 
 const mobileNav = document.querySelector(".mobile-nav");
