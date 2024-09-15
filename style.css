@@ -688,3 +688,67 @@ h1 span.stop-blinking::before {
   50% { opacity: 0 }
 }
 
+/* desktop dropdown буюу pc menu уналт */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: var(--red-color);
+  color: white;
+  padding: 14px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 26px;
+}
+
+.dropdown-btn:hover {
+  border: black;
+  background: var(--dark-color);
+}
+
+.dropdown-menu {
+  display: none;
+  position: fixed;
+  background-color: var(--dark-color);
+  min-width: 860px;
+  max-width: 90vw; 
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 26px;
+  top: 260%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Гар утсан дээр тариф текст болон buttong харагдахгүй болгсон */
+@media (max-width: 650px) {
+  .dropdown-btn {
+    display: none; /* Гар утсан дээр buttong харагдахгүй болгсон code */
+  }
+
+  .dropdown-menu {
+    display: none; /* тариф текст гар утсан дээр харагдахгүй байгаа эсэхийг шалгсан */
+  }
+}
+
+
+
