@@ -16,6 +16,26 @@ function SendMail() {
 } 
 
 
+//pc menu heseg tarip
+
+document.querySelector('.dropdown-btn').addEventListener('click', function() {
+  if (window.innerWidth > 650) {
+    const menu = document.querySelector('.dropdown-menu');
+    menu.classList.toggle('show');
+  }
+});
+
+window.addEventListener('click', function(event) {
+  if (!event.target.matches('.dropdown-btn')) {
+    const dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach((dropdown) => {
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    });
+  }
+});
+
 
 // Mobile Navigation
 
