@@ -688,6 +688,7 @@ h1 span.stop-blinking::before {
   50% { opacity: 0 }
 }
 
+
 /* desktop dropdown буюу pc menu уналт */
 .dropdown {
   position: relative;
@@ -749,6 +750,4 @@ h1 span.stop-blinking::before {
     display: none; /* тариф текст гар утсан дээр харагдахгүй байгаа эсэхийг шалгсан */
   }
 }
-
-
 
