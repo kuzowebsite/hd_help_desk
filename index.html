@@ -189,23 +189,18 @@
         <h2>Компьютероо засуулах</h2>
           <div class="group">
             <input type="text" id="name" placeholder="Нэр" required />
-            <input type="text" id="email_id" placeholder="Email" required />
+            <input type="text" id="dugaar_id" placeholder="Дугаар" required />
           </div>
 
           <div class="group">
-            <input type="text" id="dugaar_id" placeholder="Дугаар" required />
+            <textarea type="text" id="class" placeholder="Анги" required ></textarea>
             <input type="text" id="torol" placeholder="Компьютерийн төрөл    Ж: Macbook, Windows" required />
           </div>
 
           <div class="group">
-        <textarea type="text" id="class" placeholder="Анги" required ></textarea>
         <textarea type="text" id="time" placeholder="Цаг" required ></textarea>
+        <textarea type="text" id="message" placeholder="Тайлбар: Бөглөхгүй байсан ч болно." required ></textarea>
           </div>
-
-          <div class="group">
-        <textarea type="text" id="message" placeholder="Тайлбар: Бөглөхгүй байсан ч болно." required ></textarea> 
-          </div>
-
           
           <button class="btn1" onclick="SendMail()">Илгээх</button>
        
@@ -216,7 +211,7 @@
       <section id="contact" class="contact-section">
         <h2>Сэтгэл ханамж</h2>
     <div class="group">
-      <input type="text" id="name" placeholder="Нэр" required />
+      <input type="text" id="email_id" placeholder="Email" required />
       <textarea type="text" id="dugnelt" placeholder="Сэтгэл ханамж бөгөлөн үү Ж: 1-Муу 2-Яахуудээл 3-Дунд 4-Сайн 5-Маш сайн" required ></textarea> 
     </div>
     <button class="btn1" onclick="SendMail()">Илгээх</button>
