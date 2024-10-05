@@ -732,10 +732,6 @@ h1 span.stop-blinking::before {
   display: block;
 }
 
-.dropdown-menu a:hover {
-  background-color: #f1f1f1;
-}
-
 .dropdown-menu.show {
   display: block;
 }
