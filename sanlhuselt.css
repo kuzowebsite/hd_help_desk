@@ -1,0 +1,104 @@
+.huselt {
+    position: relative;
+    display: inline-block;
+    padding: 25px 100px; /* Padding-ийг хэвтээ сунгахад ашиглана */
+    color: #475bed;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    border: 4px solid #475bed; /* Хүрээг бүдүүн болгож өгөх */
+    overflow: hidden;
+    text-align: center; /* Текстийг төвд байрлуулна */
+    font-size: 20px; /* Текстийн хэмжээг томруулж болно */
+}
+
+.huselt:hover {
+    background: #475bed;
+    color: #ffffff;
+    box-shadow: 0 0 5px #475bed,
+                0 0 25px #475bed,
+                0 0 50px #475bed,
+                0 0 200px #475bed;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.huselt span {
+    position: absolute;
+    display: block;
+}
+
+.huselt span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px; /* Хүрээ бүдүүн болгох */
+    background: linear-gradient(90deg, transparent, #475bed);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+.huselt span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 4px; /* Хүрээ бүдүүн болгох */
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #475bed);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.huselt span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px; /* Хүрээ бүдүүн болгох */
+    background: linear-gradient(270deg, transparent, #475bed);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.huselt span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 4px; /* Хүрээ бүдүүн болгох */
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #475bed);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
