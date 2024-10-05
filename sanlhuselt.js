@@ -7,12 +7,12 @@ window.onload = function() {
 
     if (buttonClicked === 'true') {
         // Товч текстийг "Баярлалаа" болгож өөрчилнө
-        button.textContent = 'Санал хүсэлт бөглсөнд баярлалаа'; 
+        button.textContent = 'Баярлалаа'; 
     }
 
     // Товчийг дарж байгаа тохиолдолд sessionStorage-д утга хадгална
     button.addEventListener('click', function() {
-        this.textContent = 'Баярлалаа'; // Текстийг "Баярлалаа" болгож өөрчилнө
+        this.textContent = 'Санал хүсэлт бөглсөнд баярлалаа'; // Текстийг "Баярлалаа" болгож өөрчилнө
         sessionStorage.setItem('buttonClicked', 'true'); // sessionStorage-д хадгална
     });
 }
